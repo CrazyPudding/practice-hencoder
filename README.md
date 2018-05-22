@@ -21,3 +21,10 @@ fork 自 [HenCoder](https://github.com/hencoder) 的练习题集合，学习自�
 
 完成效果：
 ![](/images/practice2.jpg)
+
+## 4.Canvas绘制辅助
+
+原项目 [READE](/PracticeDraw4/README.md)
+
+完成效果：
+![](/images/practice4.jpg)

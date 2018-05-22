@@ -44,23 +44,28 @@ public class Practice12CameraRotateFixedView extends View {
 
         float centerX1 = point1.x + bitmap.getWidth() / 2;
         float centerY1 = point1.y + bitmap.getHeight() / 2;
-        float centerX2 = point2.y + bitmap.getHeight() / 2;
+        float centerX2 = point2.x + bitmap.getHeight() / 2;
         float centerY2 = point2.y + bitmap.getHeight() / 2;
 
         canvas.save();
         camera.save();
-        matrix.reset();
-        matrix.postTranslate(-centerX1, -centerY1);
         camera.rotateX(30);
+        canvas.translate(centerX1, centerY1);
+        camera.applyToCanvas(canvas);
+        canvas.translate(-centerX1, -centerY1);
         camera.restore();
         canvas.drawBitmap(bitmap, point1.x, point1.y, paint);
         canvas.restore();
 
         canvas.save();
+        matrix.reset();
         camera.save();
         camera.rotateY(30);
-        camera.applyToCanvas(canvas);
+        camera.getMatrix(matrix);
         camera.restore();
+        matrix.postTranslate(centerX2, centerY2);
+        matrix.preTranslate(-centerX2, -centerY2);
+        canvas.concat(matrix);
         canvas.drawBitmap(bitmap, point2.x, point2.y, paint);
         canvas.restore();
     }
