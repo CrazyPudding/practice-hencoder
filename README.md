@@ -33,6 +33,10 @@ fork 自 [HenCoder](https://github.com/hencoder) 的练习题集合，学习自�
 
 原项目 [READE](/PracticeDraw5/README.md)
 
-## 6.属性动画
+## 6.属性动画（上）
 
 原项目 [READE](/PracticeDraw6/README.md)
+
+## 7.属性动画（下）
+
+原项目 [READE](/PracticeDraw7/README.md)
