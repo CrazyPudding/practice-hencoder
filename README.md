@@ -28,3 +28,11 @@ fork 自 [HenCoder](https://github.com/hencoder) 的练习题集合，学习自�
 
 完成效果：
 ![](/images/practice4.jpg)
+
+## 5.绘制顺序
+
+原项目 [READE](/PracticeDraw5/README.md)
+
+## 6.属性动画
+
+原项目 [READE](/PracticeDraw6/README.md)
