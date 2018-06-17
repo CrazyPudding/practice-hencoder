@@ -37,6 +37,10 @@ fork 自 [HenCoder](https://github.com/hencoder) 的练习题集合，学习自�
 
 原项目 [READE](/PracticeDraw6/README.md)
 
+2018.06.17 新增 FlipBoard 效果：
+
+![](/images/animatedmap.gif)
+
 ## 7.属性动画（下）
 
 原项目 [READE](/PracticeDraw7/README.md)

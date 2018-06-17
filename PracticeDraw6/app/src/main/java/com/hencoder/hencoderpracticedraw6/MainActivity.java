@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public Fragment getItem(int position) {
+                if (position == getCount() - 1) {
+                    return AnimateMapFragment.newInstance();
+                }
                 PageModel pageModel = pageModels.get(position);
                 return PageFragment.newInstance(pageModel.sampleLayoutRes, pageModel.practiceLayoutRes);
             }
@@ -50,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public CharSequence getPageTitle(int position) {
+                if (position == getCount() - 1) {
+                    return "AnimatedMap";
+                }
                 return getString(pageModels.get(position).titleRes);
             }
         });
